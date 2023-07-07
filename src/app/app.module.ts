@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import{projects} from"./Main/allprojects";
 import { project } from './Main/Project/projectComponent';
@@ -16,12 +16,13 @@ import { editproject } from './Main/EditProject/project';
   declarations: [
     AppComponent,
     projects,
-    project,
+    [project],
     project1,
     editproject
   ],
   imports: [
     BrowserModule,
+    [ FormsModule],
     AppRoutingModule,
     ReactiveFormsModule,
   ],
