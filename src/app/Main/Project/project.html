@@ -1,5 +1,5 @@
 <ng-container *ngIf="formDataList.length > 0; else noProjects">
-  <div class="pbox" *ngFor="let formData of formDataList; let i = index">
+  <div class="pbox" *ngFor="let formData of paginatedList; let i = index">
     <div class="content">
       <div class="project-name">{{ formData?.projectName }}</div>
       <div class="state">Creation data: {{ formData?.fechaCreacion }}</div>
@@ -9,7 +9,7 @@
         <div class="dots"></div>
         <div class="dropdown-content">
           <a [routerLink]="['/editproject', currentIndex]">Edit</a>
-          <a  (click)="mostrarConfirmacionEliminacion(i)">Delete</a>
+          <a (click)="mostrarConfirmacionEliminacion(i)">Delete</a>
         </div>
       </div>
       <div class="datauser">
@@ -17,6 +17,14 @@
         {{ formData?.projectManager }}
       </div>
       <div class="status-bottom-right">Status: {{ formData?.estado }}</div>
+    </div>
+  </div>
+
+  <div class="pagination-container">
+    <div class="pagination">
+      <button *ngFor="let page of generatePageArray()" (click)="goToPage(page)" [class.active]="page === currentPage">
+        {{ page }}
+      </button>
     </div>
   </div>
 
@@ -30,5 +38,3 @@
 <ng-template #noProjects>
   <p>No projects have been found. Please create a new one</p>
 </ng-template>
-
-
