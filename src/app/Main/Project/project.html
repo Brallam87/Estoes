@@ -1,4 +1,8 @@
-<ng-container *ngIf="formDataList.length > 0; else noProjects">
+<div class="search-bar">
+  <input type="text" placeholder="Search project" [(ngModel)]="searchQuery" (input)="searchProjects()" />
+</div>
+
+<ng-container *ngIf="filteredDataList.length > 0; else noProjects">
   <div class="pbox" *ngFor="let formData of paginatedList; let i = index">
     <div class="content">
       <div class="project-name">{{ formData?.projectName }}</div>
@@ -8,8 +12,8 @@
         <div class="dots"></div>
         <div class="dots"></div>
         <div class="dropdown-content">
-          <a [routerLink]="['/editproject', currentIndex]">Edit</a>
-          <a (click)="mostrarConfirmacionEliminacion(i)">Delete</a>
+          <a [routerLink]="['/editproject', formData.originalIndex]">Edit</a>
+          <a (click)="mostrarConfirmacionEliminacion((currentPage - 1) * pageSize + formData.originalIndex)">Delete</a>
         </div>
       </div>
       <div class="datauser">
@@ -38,3 +42,6 @@
 <ng-template #noProjects>
   <p>No projects have been found. Please create a new one</p>
 </ng-template>
+
+
+

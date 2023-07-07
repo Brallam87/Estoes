@@ -11,11 +11,10 @@
   align-content: center;
 }
 .back{
-    display: inline;
-    align-content: center;
     color: #b1afaf;
     background-color: #45a04900;
     border: none;
+    padding: 2px;
     font-size: 13px;
 }
 form {
