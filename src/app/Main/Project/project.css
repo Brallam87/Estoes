@@ -1,0 +1,113 @@
+.pbox {
+  display: block;
+  margin-top: 4px;
+  background: white;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  right: 1px;
+  top: 0px;
+  display: inline-block;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dots {
+  width: 4px;
+  height: 4px;
+  margin: 1px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+.imguser {
+  border-radius: 100%;
+  position: relative;
+  width: 30px;
+}
+
+.datauser {
+  display: flex;
+  margin-top: 5px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.state {
+  font-size: 12px;
+  font-style: oblique;
+  color: grey;
+}
+
+.content {
+  margin: 5px;
+}
+
+.delete-button {
+  cursor: pointer;
+  color: red;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  text-decoration: underline;
+}
+.confirmation {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 1px;
+  border-style:solid;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.confirmation p {
+  margin-bottom: 10px;
+}
+
+.confirmation button {
+  margin-right: 10px;
+}
+.status-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 14px;
+  color: #777;
+}

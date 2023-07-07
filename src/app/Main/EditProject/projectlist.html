@@ -1,0 +1,50 @@
+<div class="pbox">
+    <button type="Back" routerLink="/projects"><i class="fas fa-arrow-left"></i> Back</button>
+    Add project
+  </div>
+  
+  <div class="pbox">
+    <form [formGroup]="formulario" (ngSubmit)="guardarFormulario()">
+      <div>
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" formControlName="projectName" aria-required="">
+      </div>
+    
+      <div>
+        <label for="descripcion">Description:</label>
+        <textarea id="descripcion" formControlName="descripcion"></textarea>
+      </div>
+    
+      <div>
+        <label for="projectManager">Project Manager:</label>
+        <select id="projectManager" formControlName="projectManager">
+          <option value="">Selec Project Manager</option>
+          <option value="manager 1">Project Manager 1</option>
+          <option value="manager 2">Project Manager 2</option>
+          <option value="manager 3">Project Manager 3</option>
+        </select>
+      </div>
+    
+      <div>
+        <label for="asignado">Asignado:</label>
+        <select id="asignado" formControlName="asignado">
+          <option value="">Choose one</option>
+          <option value="asigned 1">Asigned 1</option>
+          <option value="asigned 2">Asigned 2</option>
+          <option value="asigned 3">Asigned 3</option>
+        </select>
+      </div>
+    
+      <div>
+        <label for="estado">Status:</label>
+        <select id="estado" formControlName="estado">
+          <option value="">Choose one</option>
+          <option value="On process">On process</option>
+          <option value="Complete">Complete</option>
+          <option value="Pending">Pending</option>
+        </select>
+      </div>
+    
+      <button type="submit">Guardar</button>
+    </form>
+  </div>

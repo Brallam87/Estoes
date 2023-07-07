@@ -1,0 +1,66 @@
+.pbox{
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    background:white;
+    position: relative;
+}
+.botonback{
+  display: inline;
+  align-content: center;
+}
+.back{
+    display: inline;
+    align-content: center;
+    color: #b1afaf;
+    background-color: #45a04900;
+    border: none;
+    font-size: 13px;
+}
+form {
+    font-weight: 105;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 ;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  button[type="submit"] {
+    background-color: #fd1717;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
