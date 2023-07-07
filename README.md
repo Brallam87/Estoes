@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ¡Muchas gracias por permitirme participar en este desafío! Espero que el código cumpla con sus expectativas. Aunque fue un proyecto sencillo y no muy desafiante, agradezco su comprensión por la demora. En los últimos tres días, tuve algunas limitaciones de tiempo que me impidieron abordar este código antes. Nuevamente, muchas gracias por la oportunidad y espero haber cumplido con sus requerimientos.
 
 Requisitos del challenge
