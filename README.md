@@ -21,3 +21,5 @@ El usuario accede a un administrador de proyectos para realizar la gestion, pued
 * Debe estar realizado en un framework de JS, Angular o React.
 * La aplicacion debe estar publicada y debe ser accesible mediante un link(Ver Netlify, Heroku) o cualquier webserver.
 * El codigo de la aplicacion debe estar subida a un repositorio de publico acceso.
+
+Nuevamente gracias he cumplido con todas las funciones solicitadas!
