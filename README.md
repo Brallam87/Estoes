@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ¡Muchas gracias por permitirme participar en este desafío! Espero que el código cumpla con sus expectativas. Aunque fue un proyecto sencillo y no muy desafiante, agradezco su comprensión por la demora. En los últimos tres días, tuve algunas limitaciones de tiempo que me impidieron abordar este código antes. Nuevamente, muchas gracias por la oportunidad y espero haber cumplido con sus requerimientos.
 
 Requisitos del challenge
@@ -22,5 +21,3 @@ El usuario accede a un administrador de proyectos para realizar la gestion, pued
 * Debe estar realizado en un framework de JS, Angular o React.
 * La aplicacion debe estar publicada y debe ser accesible mediante un link(Ver Netlify, Heroku) o cualquier webserver.
 * El codigo de la aplicacion debe estar subida a un repositorio de publico acceso.
-=======
->>>>>>> 2634edc451579ce1a562af8bcce842f54800ebb9
